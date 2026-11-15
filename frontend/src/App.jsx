@@ -1,33 +1,41 @@
 
+import { Routes, Route } from 'react-router'
+
+function Home() {
+  return (
+    <div className="flex min-h-screen items-center justify-center bg-slate-50">
+      <h1 className="text-4xl font-bold text-blue-600">
+        Welcome to HireTrack
+      </h1>
+    </div>
+  )
+}
+
+function About() {
+  return <h1 className="p-10 text-3xl font-bold">About HireTrack</h1>
+}
+
+function Login() {
+  return <h1 className="p-10 text-3xl font-bold">Login Page</h1>
+}
+
+function Register() {
+  return <h1 className="p-10 text-3xl font-bold">Register Page</h1>
+}
+
+function NotFound() {
+  return <h1 className="p-10 text-3xl font-bold">404 - Page Not Found</h1>
+}
+
 function App() {
   return (
-    <main className="min-h-screen bg-slate-50 flex items-center justify-center px-6">
-      <div className="max-w-xl text-center">
-        <div className="mb-6 inline-flex items-center justify-center rounded-2xl bg-blue-600 px-5 py-3 text-2xl font-bold text-white shadow-lg">
-          H
-        </div>
-
-        <h1 className="text-5xl font-bold tracking-tight text-slate-900">
-          Hire<span className="text-blue-600">Track</span>
-        </h1>
-
-        <p className="mt-4 text-lg text-slate-600">
-          Discover opportunities. Build your future.
-        </p>
-
-        <p className="mt-3 text-sm text-slate-500">
-          Smart Career & Opportunity Platform
-        </p>
-
-        <button className="mt-8 rounded-xl bg-blue-600 px-7 py-3 font-semibold text-white shadow-md transition hover:bg-blue-700">
-          Get Started
-        </button>
-
-        <div className="mt-10 rounded-xl border border-slate-200 bg-white p-4 text-sm text-slate-500 shadow-sm">
-          Welcome to HireTrack — Your career journey starts here.
-        </div>
-      </div>
-    </main>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
+      <Route path="*" element={<NotFound />} />
+    </Routes>
   )
 }
 
