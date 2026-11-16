@@ -1,19 +1,18 @@
 
 import { Routes, Route } from 'react-router'
 import Navbar from './components/layout/Navbar'
+import HeroSection from './components/home/HeroSection'
+import CategorySection from './components/home/CategorySection'
+import FeaturedOpportunities from './components/home/FeaturedOpportunities'
+import HowItWorks from './components/home/HowItWorks'
 
 function Home() {
   return (
-    <main className="min-h-screen bg-slate-50 px-6 py-20">
-      <div className="mx-auto max-w-7xl">
-        <h1 className="text-4xl font-bold text-slate-900">
-          Welcome to <span className="text-blue-600">HireTrack</span>
-        </h1>
-
-        <p className="mt-4 text-lg text-slate-600">
-          Discover opportunities. Build your future.
-        </p>
-      </div>
+    <main>
+      <HeroSection />
+        <CategorySection />
+         <FeaturedOpportunities />
+          <HowItWorks />
     </main>
   )
 }
