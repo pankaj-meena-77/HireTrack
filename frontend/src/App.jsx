@@ -7,6 +7,7 @@ import HowItWorks from './components/home/HowItWorks'
 import Footer from './components/layout/Footer'
 import Login from './pages/Login'
 import Register from './pages/Register'
+import ForgotPassword from './pages/ForgotPassword'
 
 function Home() {
   return (
@@ -70,6 +71,7 @@ function App() {
           <Route path="/terms" element={<Terms />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
