@@ -5,6 +5,8 @@ import CategorySection from './components/home/CategorySection'
 import FeaturedOpportunities from './components/home/FeaturedOpportunities'
 import HowItWorks from './components/home/HowItWorks'
 import Footer from './components/layout/Footer'
+import Login from './pages/Login'
+import Register from './pages/Register'
 
 function Home() {
   return (
@@ -45,13 +47,7 @@ function Terms() {
   return <h1 className="p-10 text-3xl font-bold">Terms & Conditions</h1>
 }
 
-function Login() {
-  return <h1 className="p-10 text-3xl font-bold">Login Page</h1>
-}
 
-function Register() {
-  return <h1 className="p-10 text-3xl font-bold">Register Page</h1>
-}
 
 function NotFound() {
   return <h1 className="p-10 text-3xl font-bold">404 - Page Not Found</h1>
