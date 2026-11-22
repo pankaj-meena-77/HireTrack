@@ -8,6 +8,7 @@ import Footer from './components/layout/Footer'
 import Login from './pages/Login'
 import Register from './pages/Register'
 import ForgotPassword from './pages/ForgotPassword'
+import Opportunities from './pages/Opportunities'
 
 function Home() {
   return (
@@ -20,9 +21,6 @@ function Home() {
   )
 }
 
-function Opportunities() {
-  return <h1 className="p-10 text-3xl font-bold">Explore Opportunities</h1>
-}
 
 function Students() {
   return <h1 className="p-10 text-3xl font-bold">For Students</h1>
