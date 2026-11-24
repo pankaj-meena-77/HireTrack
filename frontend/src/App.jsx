@@ -9,6 +9,7 @@ import Login from './pages/Login'
 import Register from './pages/Register'
 import ForgotPassword from './pages/ForgotPassword'
 import Opportunities from './pages/Opportunities'
+import OpportunityDetails from './pages/OpportunityDetails'
 
 function Home() {
   return (
@@ -71,6 +72,7 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="/opportunities/:id" element={<OpportunityDetails />} />
         </Routes>
       </div>
 
